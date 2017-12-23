@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Contact Manager</h1>
+    </header>
+    <main>
+        <div id="newContactForm" class="hideForm">
+            <form>
+                <fieldset>
+                    <legend>New Contact</legend>
+                    <div>
+                        <label for="fullNameInput">Full Name</label>
+                        <input id="fullNameInput" placeholder="Enter Name" type="text" required/>
+                    </div>
+                    <div>
+                        <label for="emailInput">Email</label>
+                        <input id="emailInput" placeholder="Enter Email" type="email" required/>
+                    </div>
+                    <div>
+                        <label for="phoneInput">Phone</label>
+                        <input id="phoneInput" placeholder="Enter Phone" type="tel" required/>
+                    </div>
+                    <div>
+                        <input id="submitButton" type="submit" value="Add Contact"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <ul class="contacts" id="contacts">
+            <li class="contact">
+                <span class="delete" data-contact="3"></span>
+                <h3>Luke Skywalker</h3>
+                <p class="email">luke.skywalker@jedi.org</p>
+                <p class="phone">613-321-8765</p>
+            </li>
+            <li class="contact">
+                <span class="delete"></span>
+                <h3>Darth Vader</h3>
+                <p class="email">darth.vader@sith.io</p>
+                <p class="phone">613-666-1234</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div id="newContactButton" class="fab"></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
